@@ -1,0 +1,19 @@
+<div class="card " style="width: 45rem;">
+    <img src="../assets/Appleimg.png" style="height: 25rem ;" class="card-img-top" alt="...">
+    <div class="card-body" *ngFor="let blog of blogs">
+      <h3 class="card-title">{{blog.articlename}}</h3>
+      <p class="card-title text-secondary">{{blog.author}} | {{blog.date}}</p>
+      <p class="card-text">{{blog.articlecontent}}</p>
+      <hr>
+      <h4 style="font-weight:400 ;">{{blog.author}}
+        <button class="btn btn-sm" style="background-color:#0082e6 ; color: white;">+ Follow</button>
+      </h4>
+      
+      <p class='price'>Following : {{blog.follow}} <br>
+      </p>
+      <p >Comments: {{blog.comment}}</p>
+      
+    </div>
+  </div>
+  
+  <router-outlet></router-outlet>

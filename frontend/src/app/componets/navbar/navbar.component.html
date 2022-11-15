@@ -1,0 +1,20 @@
+<nav class="navbar  navbar-light navbar-expand-lg navbar sticky-top" style="height: auto; width: 100%;">
+  <a class="navbar-brand"></a>
+  <img src="../assets/foodlogo.png" id="img" alt="">
+  <div class="container" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+    (click)="collapsed = !this.collapsed">
+      <span class="navbar-toggler-icon sticky-top color-light"></span>
+    </button>
+ 
+    <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{collapse:collapsed, 'navbar-collpse':true}">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a routerLink="" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a routerLink="myblog" class="nav-link">MY BLOGS</a></li>
+        <li class="nav-item"><a routerLink="signup" class="nav-link">SIGNUP</a></li>
+      </ul>
+</div>
+</div>
+</nav>
+
